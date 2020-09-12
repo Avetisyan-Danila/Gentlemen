@@ -1,0 +1,65 @@
+.gallery
+    &__body
+        padding: 100px 0
+        position: relative
+        @media screen and ( max-width: 767px )
+            padding: 50px 0
+    &-swiper
+        margin-top: 80px
+        max-width: 888px
+        padding-bottom: 60px
+        @media screen and ( max-width: 1199px )
+            max-width: 700px
+        @media screen and ( max-width: 991px )
+            max-width: 620px
+        @media screen and ( max-width: 767px )
+            max-width: 450px
+        @media screen and ( max-width: 575px )
+            max-width: 85%
+        & .swiper-slide
+            & img
+                display: block
+                margin: 0 auto
+                width: 100%
+                height: 600px
+                @media screen and ( max-width: 1199px )
+                    height: 500px
+                @media screen and ( max-width: 991px )
+                    height: 450px
+                @media screen and ( max-width: 767px )
+                    height: 350px
+                @media screen and ( max-width: 575px )
+                    height: 250px
+                @media screen and ( max-width: 380px )
+                    height: 180px
+        & .swiper-pagination-fraction
+            bottom: 0
+            text-align: left
+            color: #000
+            font-size: 24px
+            line-height: 29px
+        & .swiper-pagination-current
+            font-family: 'YesevaOne'
+            font-size: 24px
+            line-height: 28px
+            &::before
+                content: '0'
+        & .swiper-pagination-total
+            font-family: 'YesevaOne'
+            font-size: 18px
+            line-height: 21px
+            &::before
+                content: '0'
+    &__arrow
+        position: absolute
+        top: 55%
+        cursor: pointer
+        z-index: 2
+        &_prev
+            left: -30px
+            @media screen and ( max-width: 575px )
+                left: -10px
+        &_next
+            right: -30px
+            @media screen and ( max-width: 575px )
+                right: -10px

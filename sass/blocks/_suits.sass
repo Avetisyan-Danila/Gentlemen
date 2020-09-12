@@ -1,0 +1,103 @@
+.suits
+    padding-top: 100px
+    padding-bottom: 20px
+    @media screen and ( max-width: 767px )
+        padding-top: 30px
+        padding-bottom: 0
+    &-blocks
+        margin-top: 60px
+        display: none
+        flex-wrap: wrap
+        &:nth-of-type(2)
+            display: flex
+        @media screen and ( max-width: 767px )
+            margin-top: 30px
+    &-block
+        width: calc( 33.333% - 30px )
+        margin-bottom: 80px
+        margin-right: 45px
+        position: relative
+        @media screen and ( max-width: 991px )
+            width: calc( 50% - 50px )
+            margin-right: 100px
+        @media screen and ( max-width: 767px )
+            width: 100%
+            margin-right: 0
+        &:nth-of-type(3n)
+            @media screen and ( min-width: 991px )
+                margin-right: 0
+        &:nth-of-type(2n)
+            @media screen and ( max-width: 991px )
+                margin-right: 0
+        & svg
+            cursor: pointer
+            &:hover
+                & path
+                    @media screen and ( min-width: 1199px )
+                        fill: #DB4C4C
+            & path
+                transition: 0.3s
+        & img
+            width: 100%
+            margin-bottom: 40px
+            cursor: pointer
+        &__info
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__desc
+            font-family: "Montserrat"
+            color: #000
+        &__name
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 5px
+            transition: 0.3s
+            cursor: pointer
+            &:hover
+                @media screen and ( min-width: 1199px )
+                    color: #DB4C4C
+            @media screen and ( max-width: 767px )
+                font-size: 18px
+                line-height: 20px
+        &__price
+            font-size: 18px
+            line-height: 22px
+            @media screen and ( max-width: 767px )
+                font-size: 18px
+                line-height: 20px
+        &__label
+            position: absolute
+            display: inline-block
+            padding: 30px 17px
+            border-radius: 50%
+            font-size: 18px
+            line-height: 22px
+            color: #ffffff
+            background-color: #EF5151
+            top: 20px
+            left: 20px
+            @media screen and ( max-width: 767px )
+                font-size: 14px
+                line-height: 17px
+                padding: 20px 8px
+    &-collection
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        &__link
+            margin-right: 40px
+            font-size: 20px
+            line-height: 24px
+            color: rgba(0, 0, 0, 0.5)
+            font-weight: 600
+            cursor: pointer
+            @media screen and ( max-width: 767px )
+                font-size: 14px
+                line-height: 17px
+            &:last-child
+                margin-right: 0
+            &.active
+                color: #DB4C4C
+                border-bottom: 2px solid #DB4C4C

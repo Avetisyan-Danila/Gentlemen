@@ -1,0 +1,119 @@
+.caps
+    padding-bottom: 70px
+    position: relative
+    &__body
+        position: relative
+    &-swiper
+        margin-top: 40px
+        max-width: 600px
+        @media screen and ( max-width: 1199px )
+            max-width: 500px
+        @media screen and ( max-width: 991px )
+            max-width: 420px
+        @media screen and ( max-width: 767px )
+            max-width: 250px
+        @media screen and ( max-width: 575px )
+            max-width: 75%
+        @media screen and ( max-width: 400px )
+            width: 80%
+        & .swiper-slide
+            & img
+                width: 100%
+                max-height: 535px
+                @media screen and ( max-width: 575px )
+                    height: 300px
+                @media screen and ( max-width: 400px )
+                    height: 240px
+    &-swiper-num
+        position: absolute
+        z-index: -1
+        width: 100%
+        top: 50%
+        transform: translateY(-50%)
+        & .swiper-slide
+            &:nth-of-type(4)
+                & span
+                    &:first-child
+            & .caps-num
+                width: 100%
+                display: flex
+                justify-content: space-between
+            & span
+                font-size: 185px
+                line-height: 226px
+                color: rgba(0, 0, 0, 0.1)
+                position: relative
+                top: -20px
+                @media screen and ( max-width: 1199px )
+                    font-size: 150px
+                    line-height: 183px
+                @media screen and ( max-width: 767px )
+                    font-size: 72px
+                    line-height: 88px
+                    top: -50px
+                @media screen and ( max-width: 400px )
+                    top: -60px
+                &:nth-of-type(1)
+                    transform: translateX(-45px)
+                    @media screen and ( max-width: 1199px )
+                        transform: translateX(-35px)
+                    @media screen and ( max-width: 767px )
+                        transform: translateX(-20px)
+                &:nth-of-type(2)
+                    transform: translateX(45px)
+                    @media screen and ( max-width: 1199px )
+                        transform: translateX(35px)
+                    @media screen and ( max-width: 767px )
+                        transform: translateX(25px)
+
+    &-info
+        margin-top: 40px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        @media screen and ( max-width: 767px )
+            flex-direction: column
+            margin-top: 20px
+        &__name
+            font-weight: 600
+            font-size: 20px
+            line-height: 24px
+            color: #000000
+            margin-bottom: 10px
+            @media screen and ( max-width: 767px )
+                font-size: 14px
+                line-height: 17px
+        &__price
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+            @media screen and ( max-width: 767px )
+                font-size: 14px
+                line-height: 17px
+        &__button
+            background-color: #DB4C4C
+            border-radius: 2px
+            width: 288px
+            padding: 27px 0
+            color: #ffffff
+            text-align: center
+            cursor: pointer
+            font-weight: 700
+            @media screen and ( max-width: 767px )
+                width: 100%
+        &__left
+            @media screen and ( max-width: 767px )
+                margin-bottom: 30px
+    &__arrow
+        position: absolute
+        top: 50%
+        cursor: pointer
+        z-index: 2
+        @media screen and ( max-width: 575px )
+            top: 45%
+        @media screen and ( max-width: 400px )
+            top: 42%
+        &_prev
+            left: -10px
+        &_next
+            right: -8px
